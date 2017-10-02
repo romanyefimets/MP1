@@ -5,15 +5,13 @@ using UnityEngine;
 public class Cube : MonoBehaviour {
 
     Vector3 position;
-    float speed;
-    float angleSpeed;
+    public float speed;
+    public float angleSpeed;
     bool moveUp;
 
 	// Use this for initialization
 	void Start ()
     {
-        speed = 1;
-        angleSpeed = 90;
         moveUp = true;
         position = transform.position;
         GetComponent<Renderer>().material.color = new Color(1, 1, 1);

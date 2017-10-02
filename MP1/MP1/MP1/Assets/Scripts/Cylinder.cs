@@ -5,13 +5,12 @@ using UnityEngine;
 public class Cylinder : MonoBehaviour {
 
     Vector3 position;
-    float speed;
+    public float speed;
     bool moveRight;
 
     // Use this for initialization
     void Start()
     {
-        speed = 1;
         moveRight = true;
         position = transform.position;
         GetComponent<Renderer>().material.color = new Color(1, 1, 1);
