@@ -76,7 +76,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CreationTargetLoc.cs" />
+    <Compile Include="Assets\Scripts\Cube.cs" />
+    <Compile Include="Assets\Scripts\Cylinder.cs" />
     <Compile Include="Assets\Scripts\DropOption.cs" />
+    <Compile Include="Assets\Scripts\Sphere.cs" />
     <Compile Include="Assets\Scripts\delete.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -21,14 +21,11 @@ public class CreationTargetLoc : MonoBehaviour {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit loc;
 
-            if (Physics.Raycast(ray, out loc))
+            if (Physics.Raycast(ray, out loc) && loc.collider.tag == "plane")
             {
-                if (loc.collider.tag == "plane")
-                {
-                    position = loc.point;
-                    position.y = target.transform.position.y;
-                    target.transform.position = position;
-                }
+                position = loc.point;
+                position.y = target.transform.position.y;
+                target.transform.position = position;
             }
 
         }
